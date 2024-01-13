@@ -22,8 +22,8 @@ jobs:
 
       - name: Pull new commits
         run: git pull origin main
-        working-directory: e:\www\express
+        working-directory: e:\\www\\express
 
       - name: Install dependencies
         run: npm install
-        working-directory: e:\www\express
+        working-directory: e:\\www\\express
