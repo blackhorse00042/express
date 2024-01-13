@@ -25,5 +25,5 @@ jobs:
         working-directory: e:\\www\\express
 
       - name: Install dependencies
-        run: npm install
+        run: yarn
         working-directory: e:\\www\\express
