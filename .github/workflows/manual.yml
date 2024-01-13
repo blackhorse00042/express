@@ -21,7 +21,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Pull new commits
-        run: git pull
+        run: git pull origin main
 
       - name: Install dependencies
         run: npm install
