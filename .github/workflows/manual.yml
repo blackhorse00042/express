@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  build:
+  install-dependencies:
     runs-on: self-hosted
 
     strategy:
@@ -20,10 +20,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # - name: Setup Node.js
-      #   uses: actions/setup-node@v3
-      #   with:
-      #     node-version: ${{ matrix.node-version }}
+      - name: Pull new commits
+        run: git pull
 
       - name: Install dependencies
         run: npm install
