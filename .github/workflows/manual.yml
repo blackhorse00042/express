@@ -25,5 +25,5 @@ jobs:
         working-directory: ../
 
       - name: Install dependencies
-        run: yarn
+        run: npm i
         working-directory: ../
