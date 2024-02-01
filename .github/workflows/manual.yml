@@ -22,8 +22,8 @@ jobs:
 
       - name: Pull new commits
         run: git pull origin main
-        working-directory: e:\\www\\express
+        working-directory: ../
 
       - name: Install dependencies
         run: yarn
-        working-directory: e:\\www\\express
+        working-directory: ../
